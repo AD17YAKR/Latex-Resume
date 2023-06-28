@@ -1,0 +1,302 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicon fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=0.5cm,right=0.5cm,top=0.5cm,bottom=0.5cm,columnsep=0.5cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{headingcolor}{HTML}{00C3FF}
+% \colorlet{name}{black}
+\colorlet{tagline}{black}
+\colorlet{heading}{black}
+\colorlet{headingrule}{black}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{black}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+% \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+% \renewcommand{\personalinfofont}{\footnotesize}
+% \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+% \renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Aditya Kumar Singh}
+% \tagline{Backend Developer}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+%% You can add multiple photos on the left or right
+% \photoR{2.5cm}{mnnit_log}
+% \photoL{2cm}{Yacht_High,Suitcase_High}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{adityasingh.110601@gmail.com}
+%   \phone{000-00-0000}
+  \mailaddress{West Bengal, India}
+  \github{ad17yakr}
+  \phone{+916290949425}
+  \linkedin{ad17yakr}
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbtrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+}
+
+\makecvheader
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.55}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Backend Developer}{Merchify}{April 2023 -- June 2023}{Chennai, TN}
+\begin{itemize}
+\item Developed and designed product modules related to an e-commerce app using \textbf{\color{accent!90!black}NestJs, MongoDB, TypeScript, ExpressJs}.
+\item Integrated \textbf{\color{accent!90!black}Razorpay} using the NestJS/Razorpay extension.
+
+\item Tech Stack: NestJs, MongoDB, TypeScript, ExpressJs
+\end{itemize}
+
+\divider
+
+\cvevent{Backend Developer Intern}{Locofast}{Sep 2022 -- Dec 2022}{New Delhi, India}
+\begin{itemize}
+\item Designed and developed an \textbf{\color{accent!90!black}Email Authentication System} for the client-side, utilizing \textbf{\color{accent!90!black}Amazon SES, NestJs, Redis}.
+\item Implemented database migrations and seedings for seamless application changes.
+\item Collaborated with the backend team and product team to design and develop new features based on user requirements.
+\item Tech Stack: \textbf{\color{accent!90!black}NestJs, ExpressJs, MySQL, ObjectionJs, MJML, Microservices}.
+\end{itemize}
+
+\divider
+
+\cvevent{Flutter Developer}{Beta Testers}{Nov 2021 -- April 2022}{Kolkata, West Bengal}
+\begin{itemize}
+\item Developed and designed two mobile apps from scratch using Flutter as part of the "WaterDrop" water delivery service project, resulting in acquiring over 100+ customers within the first month of launch.
+\item Leveraged the \textbf{\color{accent!90!black}Google Maps API} to create a location-based marketplace with key functionalities.
+\item Implemented \textbf{\color{accent!90!black}Lazy Loading} using pagination to reduce server load.
+\item Successfully deployed the application on the \textbf{\color{accent!90!black}Google Play Store}.
+\item Tech Stack: \textbf{\color{accent!90!black}Flutter, Dart, Firebase, Google Maps}.
+\end{itemize}
+
+\cvsection{Education}
+
+\cvevent{B.Tech in Computer Science \& Engineering}{Ramkrishna Mahato Government Engineering College}{CGPA: 9.05 }{2019-2023}
+
+\divider
+
+\cvevent{Senior Secondary Examination ICSE - Class XII}{Ratnakar North Point School}{Percentage: 90.5\%}{ISC-2019}
+
+\divider
+
+\cvevent{Higher Secondary Examination CBSE - Class X}{Ratnakar North Point School}{Percentage: 85}{ICSE - 2017}
+
+% \cvsection{EXTRA CURRICULARS}
+% \projectname{\href{https://www.youtube.com/c/ARYANMITTAL}{Youtube (Aditya Kumar Singh - 18k Subs) - DSA \& Coding}}
+% \begin{itemize}
+% \item Teaching about Coding, Data Structure \& Algorithms etc.
+% \end{itemize}
+
+\cvsection{POSITION OF RESPONSIBILITY}
+\projectname{{Android Lead - GDSC RKMGEC}}
+\begin{itemize}
+\item Organized and Managed Events specially related to Flutter
+\end{itemize}
+
+% \cvsection{Projects}
+% \projectname{CENTAURUS BOT}
+% \begin{itemize}
+% \item Smart Bot which generates Smart Notes for the user in the Online Class.
+% \item Alert the admin when an abusive language is being used.
+% \item Notifying when your name is being called in the meeting.
+% \item Technologies used - Python, Selenium, IBM Watson Speech API, Google Speech API, Machine Learning.
+% \item \github{The-Mavericks/Centauras-Bot}
+% \end{itemize}
+% \divider
+% \projectname{ALL IN ONE EDITOR \& COMPRESSOR}
+% \begin{itemize}
+% \item Provides Rich Text Editor, Image Editor \& File Compressor in one place.
+% \item Achieved File Compression up to 56\% by using Huffman Encoding.
+% \item Technologies used - HTML, CSS, JavaScript, Bootstrap.
+% \item \github{aryan-0077/All-in-one-Text-Image-Editor-File-Compressor}
+% \end{itemize}
+% \divider
+% \projectname{LOCALE LITE}
+% \begin{itemize}
+% \item Online Platform for Service Providers and Consumers to connect locally.
+% \item Key Features - Persistent Login, Maps, Chat \& Online Payment.
+% \item Technologies used - Android Studio, MapBox API, AndroidX, Firebase.
+% \item \github{aryan-0077/Locale-Lite}
+% \end{itemize}
+
+\switchcolumn
+
+% \cvsection{Areas Of Interest}
+% \cvtag{Algorithms}
+% \cvtag{Data Structures}
+% \cvtag{Teaching}\\
+% \cvtag{Software Development}
+% \cvtag{Photography}
+
+\cvsection{Technical Skills}
+\begin{itemize}
+    \item \textbf{\color{accent!90!black}Programming Languages}: C++, C, Java, JavaScript, Dart, TypeScript
+    \item \textbf{\color{accent!90!black}Data Structures \& Algorithm}
+    \item \textbf{\color{accent!90!black}Database}: MySQl, MongoDB
+     \item \textbf{\color{accent!90!black}Tools} : Firebase, Firestore, Git, Postman, VSCode.
+    \item \textbf{\color{accent!90!black}Frameworks and Libraries}: Flutter, NodeJs, ExpressJs, NestJs
+\end{itemize}
+
+\cvsection{Achievements}
+\begin{itemize}
+\item Ranked \textbf{\color{accent!90!black} 91\textsuperscript{st}} out of 2252 contestants in GeeksForGeeks Weekly Coding Contest 98
+\end{itemize}
+
+\begin{itemize}
+\item Ranked \textbf{\color{accent!90!black}1806\textsuperscript{th}} in Leetcode BiWeekly - 104
+\end{itemize}
+
+\begin{itemize}
+\item Ranked \textbf{\color{accent!90!black}1084\textsuperscript{th}} out of 27702 contestants in Codeforces Round 863
+\end{itemize}
+
+\begin{itemize}
+\item Rated \textbf{\color{accent!90!black}1710} at Leetcode
+\end{itemize}
+
+\begin{itemize}
+\item Solved \textbf{\color{accent!90!black}400+} questions on Various Problem Solving Platforms
+\end{itemize}
+
+\begin{itemize}
+\item 5 star in Java on Hackerrank.
+\end{itemize}
+
+
+\cvsection{CODING PROFILE}
+
+\cvachievement{}{\href{https://leetcode.com/AD17YAKR/}{Leetcode - AD17YAKR } 
+ [Rating: 1710]}
+
+\cvachievement{}{\href{https://codeforces.com/profile/ad17yakr}{Codeforces - ad17yakr}}
+\cvachievement{}{\href{https://auth.geeksforgeeks.org/user/ad17yakr/}{GeeksForGeeks - ad17yakr }}
+% \begin{itemize}
+%     \item Highest Rating - 1938 (4 Star)
+%     \item Best Rank - 235 out of 8,726 (November Cook-Off)
+% \end{itemize}
+
+\cvsection{Projects}
+
+\projectname{Beasenest}
+\begin{itemize}
+\item Developed and designed an e-commerce platform that connects farmers to the general audience using \textbf{\color{accent!90!black}Flutter} and \textbf{\color{accent!90!black}ExpressJs}.
+\item Incorporated e-commerce capabilities including user authentication, shopping cart features, user profiles, and item detail pages.
+% \item Tech Stack: \textbf{\color{accent!90!black}Flutter, Node.js, ExpressJs, Firebase}
+\item \href{https://user-images.githubusercontent.com/71925269/227570845-4a7de5cd-c464-42b2-95cc-fb958e5d64a4.mp4}{Video Demo}
+\end{itemize}
+\divider
+
+\projectname{HostelEase}
+\begin{itemize}
+\item Created a hostel management system to improve efficiency in tasks such as tracking attendance and food preferences, featuring an admin panel for data analysis and mess meal management.
+\item Used \textbf{\color{accent!90!black}Flutter} for developing the UI and integrated it with the help of basic \textbf{\color{accent!90!black}HTTP} requests.
+\item \github{AD17YAKR/hostel_management_system}
+\item \href{https://user-images.githubusercontent.com/71925269/227570923-6c04c0f0-38ef-41e8-8767-72a31ae21345.mp4}{Video Demo}
+\end{itemize}
+\divider
+
+\projectname{Bootcamper}
+\begin{itemize}
+\item Developed a comprehensive repository of 25+ APIs for a bootcamp database using \textbf{\color{accent!90!black}ExpressJs} and \textbf{\color{accent!90!black}MongoDB}.
+\item Implemented essential functionalities such as user registration, login, logout, and search in the APIs and ensured their security.
+\item \github{ad17yakr/Bootcamper}
+\end{itemize}
+% \cvsection{Technical Skills}
+% \begin{itemize}
+%     \item \textbf{\color{accent!90!black}Programming Languages}: Java, C, C++ (Competitive Programming), Python, JavaScript
+%     \item \textbf{\color{accent!90!black}Data Structures \& Algorithm}
+%     \item \textbf{\color{accent!90!black}Object Oriented Programming \& MySql}
+%     \item \textbf{\color{accent!90!black}System Design}: Low Level Design \& Software Development
+% \end{itemize}
+
+% \cvsection{EXTRA CURRICULARS}
+% \projectname{\href{https://www.youtube.com/c/ARYANMITTAL}{Youtube Channel (Aditya Kumar Singh - 18k Subscribers)}}
+% \begin{itemize}
+% \item Teaching about Data Structures \& Algorithms along with \\ sharing post contest ideas and approaches.
+% \end{itemize}
+
+% \cvsection{POSITION OF RESPONSIBILITY}
+% \projectname{{House Captain - Tagore House}}
+% \begin{itemize}
+% \item Organized \& Managed all inter house and school \\ competitions, both academic as well as cultural events.
+% \end{itemize}
+
+
+\end{paracol}
+
+\end{document}
